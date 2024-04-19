@@ -33,5 +33,3 @@ public class BillettController {
         rep.slettAlleBilletter();
     }
 }
-
-
