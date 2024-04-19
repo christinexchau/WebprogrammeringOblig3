@@ -11,6 +11,7 @@ function regBillett () {
         telefonnr: $('#telefonnr').val(),
     };
 
+    //Legger til valideringsinputer
     if(Object.values(enBillett).includes("") || enBillett.film === "Velg film her") {
         if (enBillett.antall === "") {
             $("#antallFeil").html("Du mangler å skrive inn antall");
@@ -37,7 +38,6 @@ function regBillett () {
         } else {
             $("#telefonnrFeil").html("");
         }
-
     } else {
         $.post("/lagre", enBillett, function () {
             hentAlle();
