@@ -95,3 +95,5 @@ function gyldigTelefon(telefon) {
     const telefonRegex = /^(4[0-9]{7}|9[0-9]{7})$/;
     return telefonRegex.test(telefon);
 }
+
+//test 1
