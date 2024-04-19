@@ -1,4 +1,6 @@
 
+//Test 1
+
 //Funksjon som registrerer billetten
 function regBillett () {
     const enBillett = {
