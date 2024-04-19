@@ -88,5 +88,6 @@ function gyldigTelefon(telefon) {
         ///^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/
         // /^\d{8}$/;
         ///^(4[0-9]{7}|9[0-9]{7})$/;
+    //test
     return telefonRegex.test(telefon);
 }
