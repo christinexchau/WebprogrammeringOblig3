@@ -1,5 +1,7 @@
 package oslometwebpro.oblig3;
 
+//En vanlig java object for Billett (POJO)
+
 public class Billett {
     private String film;
     private int antall;

@@ -26,7 +26,7 @@ public class BillettRepository {
         String sql = "SELECT * FROM Billett";
         List<Billett> alleBilletter = db.query(sql, new BeanPropertyRowMapper(Billett.class));
         return alleBilletter;
-    } //
+    }
 
     public void slettAlleBilletter() {
         String sql = "DELETE FROM Billett";

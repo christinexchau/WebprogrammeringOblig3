@@ -14,21 +14,24 @@ public class BillettController {
     @Autowired
     private BillettRepository rep;
 
+
+    //Lagrer inputene på server
     @PostMapping("/lagre")
     public void lagreBillett(Billett billett) {
         rep.lagreBillett(billett);
     }
 
+    //Henter billetter fra server
     @GetMapping("/hentAlle")
     public List<Billett> hentAlle(){
         return rep.hentAlleBilletter();
     }
 
+    //Sletter billettene fra server
     @GetMapping("/slettAlle")
     public void slettAlle() {
         rep.slettAlleBilletter();
     }
-
 }
 
 
