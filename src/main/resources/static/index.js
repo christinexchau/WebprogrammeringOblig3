@@ -1,4 +1,6 @@
 
+
+//Funksjon som registrerer billetten
 function regBillett () {
     const enBillett = {
         film: $('#film').val(),
