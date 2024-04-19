@@ -1,5 +1,4 @@
 
-
 //Funksjon som registrerer billetten
 function regBillett () {
     const enBillett = {
@@ -39,9 +38,12 @@ function regBillett () {
             $("#telefonnrFeil").html("");
         }
     } else {
+
+        //lagrer inputene inni server
         $.post("/lagre", enBillett, function () {
             hentAlle();
         });
+        //Tømmer inputene
         $("#film").val("");
         $("#antall").val("");
         $("#fornavn").val("");
@@ -56,6 +58,7 @@ function hentAlle() {
     });
 }
 
+//Viser fram inputene til bruker
 function formaterData(billetter) {
     let ut = "<table class='table table-striped'><tr><th>Film</th><th>Antall</th><th>Fornavn</th>" +
         "<th>Etternavn</th><th>Epost</th><th>Telefonnummer</th></tr>";
@@ -72,22 +75,24 @@ function formaterData(billetter) {
     $("#billettene").html(ut);
 }
 
+//Funksjon som sletter alle billetter
 function slettAlle() {
     $.get("/slettAlle", function () {
         hentAlle();
     });
 }
 
+//Validering for gyldig epost
 function gyldigEpost(epost) {
     const epostRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$/;
     return epostRegex.test(epost);
 }
 
+//Validering for gyldig telefonnr
 function gyldigTelefon(telefon) {
     const telefonRegex = /^(4[8-9]{7}|9[0-9]{7})$/;
         ///^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/
         // /^\d{8}$/;
         ///^(4[0-9]{7}|9[0-9]{7})$/;
-    //test
     return telefonRegex.test(telefon);
 }
