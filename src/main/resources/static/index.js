@@ -39,7 +39,7 @@ function regBillett () {
         }
     } else {
 
-        //lagrer inputene inni server
+        //Lagrer inputene inni server
         $.post("/lagre", enBillett, function () {
             hentAlle();
         });
@@ -90,9 +90,6 @@ function gyldigEpost(epost) {
 
 //Validering for gyldig telefonnr
 function gyldigTelefon(telefon) {
-    const telefonRegex = /^(4[8-9]{7}|9[0-9]{7})$/;
-        ///^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/
-        // /^\d{8}$/;
-        ///^(4[0-9]{7}|9[0-9]{7})$/;
+    const telefonRegex = /^(4[0-9]{7}|9[0-9]{7})$/;
     return telefonRegex.test(telefon);
 }
