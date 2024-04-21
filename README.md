@@ -1,7 +1,7 @@
 OsloMet brukernavn: chtra2129 
 GitHub brukernavn: christinexchau
 Fullt navn: Christine Ngoc Tran 
-GitHub repo URL: 
+GitHub repo URL: https://github.com/christinexchau/WebprogrammeringOblig3/tree/master
 
 This program is a ticket registration system designed to facilitate the purchase of tickets for various movies. 
 Users can input their first name, last name, email, phone number, select a movie from a dropdown menu,
