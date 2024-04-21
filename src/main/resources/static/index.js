@@ -1,6 +1,4 @@
 
-//Test 1
-
 //Funksjon som registrerer billetten
 function regBillett () {
     const enBillett = {
@@ -34,7 +32,8 @@ function regBillett () {
         } else {
             $("#epostFeil").html("");
         }
-        if (enBillett.telefonnr === "" || !gyldigTelefon(enBillett.telefonnr )) {
+        if (isNaN(enBillett.telefonnr) || enBillett.telefonnr === "" ||
+            enBillett.telefonnr.length !==8 || !gyldigTelefon(enBillett.telefonnr) ) {
             $("#telefonnrFeil").html("Du må skrive et gyldig telefonnummer")
         } else {
             $("#telefonnrFeil").html("");
@@ -91,9 +90,8 @@ function gyldigEpost(epost) {
 }
 
 //Validering for gyldig telefonnr
-function gyldigTelefon(telefon) {
-    const telefonRegex = /^(4[0-9]{7}|9[0-9]{7})$/;
-    return telefonRegex.test(telefon);
+function gyldigTelefon(telefonnr) {
+    const telefonRegex =/^(4[0-9]{7}|9[0-9]{7})$/;
+    return telefonRegex.test(telefonnr);
 }
 
-//test 1
