@@ -21,7 +21,7 @@ tickets from the list. The program utilizes Javascript (and jQuuery) for input v
 registration, and rendering ticket information on the webpage.
 
 We have also "styled" the application on the client with Boot Strap, 
-where the layout of the website is more clear. We have also moved the
+where the layout of the website is more clear. At the same time, we moved the
 input information to a table in a relational database, so the
 registered inputs are sent to the table. The information will be displayed on the website, 
 but also on the table on this website: http://localhost:8080/h2-console. 
