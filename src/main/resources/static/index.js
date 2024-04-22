@@ -32,7 +32,7 @@ function regBillett () {
         } else {
             $("#epostFeil").html("");
         }
-    if (enBillett.telefonnr === "" || enBillett.telefonnr.length !== 8) {
+        if (enBillett.telefonnr === "" || enBillett.telefonnr.length !== 8) {
             $("#telefonnrFeil").html("Du må skrive inn et gyldig telefonnummer")
         } else {
             $("#telefonnrFeil").html("");
@@ -88,9 +88,18 @@ function gyldigEpost(epost) {
     return epostRegex.test(epost);
 }
 
-//Validering for gyldig telefonnr
+/*
+Validering for gyldig telefonnr
+
 function gyldigTelefon(telefonnr) {
     const telefonRegex = /^(4[0-9]{7}|9[0-9]{7})$/;
     return telefonRegex.test(telefonnr);
 }
+Denne funksjonen funker merkelig nok ikke, og det samme gjelder if-setningen:
+ enBillett.telefonnr.length !== 8
+ !gyldigTelefon(enBillett.telefonnr)
+
+Jeg har gått hjelp hos Orakel, og de fikk det heller ikke til.
+ */
+
 
