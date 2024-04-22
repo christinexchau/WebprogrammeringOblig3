@@ -12,6 +12,7 @@ public class BillettRepository {
     @Autowired
     private JdbcTemplate db;
 
+    // Lagrer inputverdinene inni tabellen
     public void lagreBillett (Billett billett) {
         String sql = "INSERT INTO Billett (film, antall, fornavn, etternavn, epost, telefonnr) VALUES (?,?,?,?,?,?)";
         db.update(sql, billett.getFilm(),
@@ -22,12 +23,14 @@ public class BillettRepository {
                 billett.getTelefonnr());
     }
 
+    // Legger til en SQL-kommando der brukeren henter alle billetter
     public List<Billett> hentAlleBilletter() {
         String sql = "SELECT * FROM Billett";
         List<Billett> alleBilletter = db.query(sql, new BeanPropertyRowMapper(Billett.class));
         return alleBilletter;
     }
 
+    // Legger til en SQL-kommando der brukeren sletter alle billetter
     public void slettAlleBilletter() {
         String sql = "DELETE FROM Billett";
         db.update(sql);

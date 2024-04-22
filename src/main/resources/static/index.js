@@ -32,9 +32,8 @@ function regBillett () {
         } else {
             $("#epostFeil").html("");
         }
-        if (isNaN(enBillett.telefonnr) || enBillett.telefonnr === "" ||
-            enBillett.telefonnr.length !==8 || !gyldigTelefon(enBillett.telefonnr) ) {
-            $("#telefonnrFeil").html("Du må skrive et gyldig telefonnummer")
+        if (enBillett.telefonnr === "" || enBillett.telefonnr.length !==8 || !gyldigTelefon(enBillett.telefonnr) ) {
+            $("#telefonnrFeil").html("Du må skrive inn et gyldig telefonnummer")
         } else {
             $("#telefonnrFeil").html("");
         }
@@ -59,7 +58,7 @@ function hentAlle() {
     });
 }
 
-//Viser fram inputene til bruker
+//Viser fram inputene til bruker i en tabell
 function formaterData(billetter) {
     let ut = "<table class='table table-striped'><tr><th>Film</th><th>Antall</th><th>Fornavn</th>" +
         "<th>Etternavn</th><th>Epost</th><th>Telefonnummer</th></tr>";
