@@ -7,7 +7,7 @@ function regBillett () {
         fornavn: $('#fornavn').val(),
         etternavn: $('#etternavn').val(),
         epost: $('#epost').val(),
-        telefonnr: $('#telefonnr').val(),
+        telefonnr: $('#telefonnr').val()
     };
 
     //Legger til valideringsinputer
@@ -32,7 +32,7 @@ function regBillett () {
         } else {
             $("#epostFeil").html("");
         }
-        if (enBillett.telefonnr === "" || enBillett.telefonnr.length !==8 || !gyldigTelefon(enBillett.telefonnr) ) {
+        if (enBillett.telefonnr === "" || enBillett.telefonnr.length !== 8) {
             $("#telefonnrFeil").html("Du må skrive inn et gyldig telefonnummer")
         } else {
             $("#telefonnrFeil").html("");
@@ -49,7 +49,7 @@ function regBillett () {
         $("#fornavn").val("");
         $("#etternavn").val("");
         $("#epost").val("");
-        $("#telefonnr").val("");
+        $('#telefonnre').val("");
     }
 }
 function hentAlle() {

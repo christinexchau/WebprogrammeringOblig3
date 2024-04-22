@@ -8,9 +8,9 @@ public class Billett {
     private String fornavn;
     private String etternavn;
     private String epost;
-    private String telefonnr;
+    private int telefonnr;
 
-    public Billett(String film, int antall, String fornavn, String etternavn, String epost, String telefonnr) {
+    public Billett(String film, int antall, String fornavn, String etternavn, String epost, int telefonnr) {
         this.film = film;
         this.antall = antall;
         this.fornavn = fornavn;
@@ -62,11 +62,11 @@ public class Billett {
         this.epost = epost;
     }
 
-    public String getTelefonnr() {
+    public int getTelefonnr() {
         return telefonnr;
     }
 
-    public void setTelefonnr(String telefonnr) {
+    public void setTelefonnr(int telefonnr) {
         this.telefonnr = telefonnr;
     }
 }
