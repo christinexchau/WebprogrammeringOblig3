@@ -99,7 +99,6 @@ Denne funksjonen funker merkelig nok ikke, og det samme gjelder if-setningen:
  enBillett.telefonnr.length !== 8
  !gyldigTelefon(enBillett.telefonnr)
 
-Jeg har gått hjelp hos Orakel, og de fikk det heller ikke til.
+Jeg har fått hjelp hos Orakel, og de fikk det heller ikke til.
  */
-
 
