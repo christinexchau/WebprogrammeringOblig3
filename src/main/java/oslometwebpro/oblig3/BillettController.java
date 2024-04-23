@@ -13,7 +13,6 @@ public class BillettController {
     @Autowired
     private BillettRepository rep;
 
-
     //Lagrer inputene på server
     @PostMapping("/lagre")
     public void lagreBillett(Billett billett) {
