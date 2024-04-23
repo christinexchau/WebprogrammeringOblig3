@@ -1,4 +1,4 @@
-OsloMet brukernavn: chtra2129@oslomet.no
+OsloMet brukernavn: chtra2129
 
 GitHub brukernavn: christinexchau
 
