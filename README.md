@@ -25,4 +25,4 @@ where the layout of the website is more clear. At the same time, we moved the
 input information to a table in a relational database, so the
 registered inputs are sent to the table. The information will be displayed on the website, 
 but also on the table on this website: http://localhost:8080/h2-console. 
-Here you can enter SELECT * FROM Billett, and then you will get to se all your registered tickets.
+Here you can enter SELECT * FROM Billett, and then you will get to see all your registered tickets.
