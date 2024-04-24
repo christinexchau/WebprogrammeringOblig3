@@ -58,7 +58,7 @@ function hentAlle() {
     });
 }
 
-//Viser fram inputene til bruker i en tabell
+//Viser fram inputene i en tabell
 function formaterData(billetter) {
     let ut = "<table class='table table-striped'><tr><th>Film</th><th>Antall</th><th>Fornavn</th>" +
         "<th>Etternavn</th><th>Epost</th><th>Telefonnummer</th></tr>";
@@ -95,10 +95,12 @@ function gyldigTelefon(telefonnr) {
     const telefonRegex = /^(4[0-9]{7}|9[0-9]{7})$/;
     return telefonRegex.test(telefonnr);
 }
+
 Denne funksjonen funker merkelig nok ikke, og det samme gjelder if-setningen:
  enBillett.telefonnr.length != 8
  !gyldigTelefon(enBillett.telefonnr)
 
-Jeg har fått hjelp hos Orakel, og de fikk det heller ikke til.
+Jeg har også fått hjelp hos Orakel, og de fikk det heller ikke til.
+
  */
 
