@@ -6,7 +6,7 @@ Fullt navn: Christine Ngoc Tran
 
 GitHub repo URL: https://github.com/christinexchau/WebprogrammeringOblig3/tree/master
 
-Youtube URL: https://www.youtube.com/watch?v=Y7Taworjxno
+Youtube URL: https://www.youtube.com/watch?v=sgv7Hcd9wpY
 
 This program is a ticket registration system designed to facilitate the purchase of tickets for various movies. 
 Users can input their first name, last name, email, phone number, select a movie from a dropdown menu,
