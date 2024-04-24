@@ -103,4 +103,3 @@ Denne funksjonen funker merkelig nok ikke, og det samme gjelder if-setningen:
 Jeg har også fått hjelp hos Orakel, og de fikk det heller ikke til.
 
  */
-
