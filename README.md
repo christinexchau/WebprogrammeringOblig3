@@ -20,7 +20,7 @@ selected movie, and ticket quantity. Additionally, there is functionality to cle
 tickets from the list. The program utilizes Javascript (and jQuuery) for input validation, ticket 
 registration, and rendering ticket information on the webpage.
 
-This program is also "styled" the application on the client with Boot Strap, 
+This program has also "styled" the application on the client with Boot Strap, 
 where the layout of the website is more structured. At the same time, we moved the
 input information both to a table in a relational database, and also on the server. The information
 on will be displayed on the website, and also on the table on this website: http://localhost:8080/h2-console. 
