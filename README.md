@@ -20,9 +20,7 @@ selected movie, and ticket quantity. Additionally, there is functionality to cle
 tickets from the list. The program utilizes Javascript (and jQuuery) for input validation, ticket 
 registration, and rendering ticket information on the webpage.
 
-The program has also "styled" the application on the client with Boot Strap, 
-where the layout of the website is more structured. At the same time, we moved the
-input information both to a table in a relational database, and also on the server. 
-The information will be displayed on the website, and also on the tableon this
-website: http://localhost:8080/h2-console. Here you can enter SELECT * FROM Billett,
-and then you will get to see all your registered tickets. 
+In this update of mandatory task 1, I've transferred the storage of orders 
+from the client to the server using Spring Boot and Java. Originally, orders were stored
+in an array on the server, but this is now replaced with a table in a relational database. 
+At the same time, the client application is styled with Bootstrap for an enhanced user interface.
