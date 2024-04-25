@@ -4,7 +4,7 @@ GitHub brukernavn: christinexchau
 
 Fullt navn: Christine Ngoc Tran 
 
-GitHub repo URL: https://github.com/christinexchau/WebprogrammeringOblig3/tree/master
+GitHub repo URL: https://github.com/christinexchau/WebprogrammeringOblig3
 
 Youtube URL: https://www.youtube.com/watch?v=sgv7Hcd9wpY
 
