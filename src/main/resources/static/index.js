@@ -101,5 +101,6 @@ Denne funksjonen funker merkelig nok ikke, og det samme gjelder if-setningen:
  !gyldigTelefon(enBillett.telefonnr)
 
 Jeg har også fått hjelp hos Orakel, og de fikk det heller ikke til.
+Ellers funker if-setningen når inputfelten er tom.
 
  */
