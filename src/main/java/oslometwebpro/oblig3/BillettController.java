@@ -19,7 +19,7 @@ public class BillettController {
         rep.lagreBillett(billett);
     }
 
-    //Henter billetter fra server
+    //Henter billettene fra server
     @GetMapping("/hentAlle")
     public List<Billett> hentAlle(){
         return rep.hentAlleBilletter();
