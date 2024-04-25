@@ -17,7 +17,7 @@ purchase is processed. Upon submission, the ticket information is stored as obje
 
 Users can view all purchased tickets, including details such as name, email, phone number, 
 selected movie, and ticket quantity. Additionally, there is functionality to clear all
-tickets from the list. The program utilizes Javascript (and jQuuery) for input validation, ticket 
+tickets from the list. The program utilizes Javascript (and jQuery) for input validation, ticket 
 registration, and rendering ticket information on the webpage.
 
 In this update of the mandatory task 1, the storage of orders has been transferred
