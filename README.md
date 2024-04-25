@@ -6,7 +6,7 @@ Fullt navn: Christine Ngoc Tran
 
 GitHub repo URL: https://github.com/christinexchau/WebprogrammeringOblig3/tree/master
 
-Youtube URL: 
+Youtube URL: https://www.youtube.com/watch?v=sgv7Hcd9wpY
 
 This program is a ticket registration system designed to facilitate the purchase of tickets for various movies. 
 Users can input their first name, last name, email, phone number, select a movie from a dropdown menu,
@@ -20,9 +20,9 @@ selected movie, and ticket quantity. Additionally, there is functionality to cle
 tickets from the list. The program utilizes Javascript (and jQuuery) for input validation, ticket 
 registration, and rendering ticket information on the webpage.
 
-We have also "styled" the application on the client with Boot Strap, 
-where the layout of the website is more clear. At the same time, we moved the
-input information to a table in a relational database, so the
-registered inputs are sent to the table. The information will be displayed on the website, 
-but also on the table on this website: http://localhost:8080/h2-console. 
-Here you can enter SELECT * FROM Billett, and then you will get to se all your registered tickets.
+The program has also "styled" the application on the client with Boot Strap, 
+where the layout of the website is more structured. At the same time, we moved the
+input information both to a table in a relational database, and also on the server. 
+The information will be displayed on the website, and also on the tableon this
+website: http://localhost:8080/h2-console. Here you can enter SELECT * FROM Billett,
+and then you will get to see all your registered tickets. 
