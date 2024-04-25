@@ -20,7 +20,7 @@ selected movie, and ticket quantity. Additionally, there is functionality to cle
 tickets from the list. The program utilizes Javascript (and jQuuery) for input validation, ticket 
 registration, and rendering ticket information on the webpage.
 
-In this update of mandatory task 1, I've transferred the storage of orders 
+In this update of the mandatory task 1, the storage of orders has been transferred
 from the client to the server using Spring Boot and Java. Originally, orders were stored
 in an array on the server, but this is now replaced with a table in a relational database. 
-At the same time, the client application is styled with Bootstrap for an enhanced user interface.
+At the same time, the client application is styled with Bootstrap for an improved user interface.
